@@ -16,7 +16,6 @@ class HamburgerMenu extends React.Component {
         <Menu>
             <Link to={`/`}>Home</Link>
             <Link to={`/settings`}>Settings</Link>
-            <Link to={`/results`}>Results</Link>
         </Menu>
       );
   }
