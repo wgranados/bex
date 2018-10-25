@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { DataTable } from 'carbon-components-react';
+import { Link } from 'react-router-dom';
+import _  from 'lodash';
+
 const {
     TableContainer,
     Table,
@@ -13,12 +16,11 @@ const {
 
 class Results extends Component  {
     render() {
-        const search = this.props.location.state.search;
         // Given that we have the following rows with the fields `foo`, `bar`, and `baz`
         const rows = [
             {
               isbn_number: 1234567890,
-              id: "a",
+              id: "1234", 
               title: "Algorithm Design",
               author: "Kleinberg Tardos",
               edition: "3rd",
@@ -27,7 +29,7 @@ class Results extends Component  {
             },
             {
               isbn_number: 1234567890,
-              id: "b",
+              id: "3421",
               title: "Algorithm Design",
               author: "Kleinberg Tardos",
               edition: "2nd",
@@ -36,7 +38,7 @@ class Results extends Component  {
             },
             {
               isbn_number: 1234567890,
-              id: "c",
+              id: "7891",
               title: "Algorithm Design",
               author: "Kleinberg Tardos",
               edition: "3rd",
@@ -44,7 +46,15 @@ class Results extends Component  {
               location: "Uwaterloo",
             },
           ];
+        const linkedRows = _.map(rows, (elem) => ({
+            ...elem,
+            listing_id: <Link to={"/listing"} params={{...elem}} > {elem.id} </Link>
+        }));
         const headers = [ 
+            {  
+                header: 'Listing Id',
+                key: 'listing_id', 
+            }, 
             {  
                 header: 'ISBN Number',
                 key: 'isbn_number', 
@@ -72,7 +82,7 @@ class Results extends Component  {
         ];
         const table = 
         <DataTable
-        rows={rows}
+        rows={linkedRows}
         headers={headers}
         render={({ rows, headers, getHeaderProps }) => (
             <TableContainer title={'Results for Tardos'}>
