@@ -3,6 +3,9 @@ import { DataTable } from 'carbon-components-react';
 import { Link } from 'react-router-dom';
 import _  from 'lodash';
 
+import 'carbon-components/scss/globals/scss/styles.scss';
+
+
 const {
     TableContainer,
     Table,

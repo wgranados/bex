@@ -6,6 +6,7 @@
     "carbon-components": "^9.35.1",
     "carbon-components-react": "^6.42.0",
     "carbon-icons": "^7.0.7",
+    "node-sass": "^4.9.4",
     "react": "^16.5.2",
     "react-burger-menu": "^2.5.4",
     "react-dom": "^16.5.2",
