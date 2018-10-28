@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { DataTable } from 'carbon-components-react';
-import { Link } from 'react-router-dom';
+import { Link , Redirect } from 'react-router-dom';
 import _  from 'lodash';
 
-import 'carbon-components/scss/globals/scss/styles.scss';
 
 
 const {
@@ -51,7 +50,19 @@ class Results extends Component  {
           ];
         const linkedRows = _.map(rows, (elem) => ({
             ...elem,
-            listing_id: <Link to={"/listing"} params={{...elem}} > {elem.id} </Link>
+            listing_id: <Link 
+                to={{
+                pathname:  '/listing',
+                state: {
+                    id: elem.id,
+                    title: elem.title,
+                    author: elem.author,
+                    isbnNumber: elem.isbn_number,
+                    edition: elem.edition,
+                    price: elem.price,
+                    location: elem.location
+                }
+            }} > {elem.id} </Link>
         }));
         const headers = [ 
             {  
