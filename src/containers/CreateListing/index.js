@@ -18,6 +18,9 @@ class CreateListing extends Component {
 
 
     handleSelectedSchoolChange = (selectedSchool) => { this.setState({selectedSchool});}
+    onClick = () => {
+        alert("Your textbook has been listed!");
+    }
     
     render() {
 
@@ -256,7 +259,9 @@ class CreateListing extends Component {
 
 
 
-                        <Button>Create Listing</Button>
+                        <Button onClick={this.onClick}>
+                            Create Listing
+                        </Button>
                     </center>
                 </Form>
             </div>
