@@ -19,5 +19,5 @@ The app.js files are the main entry point into the application, here we simply d
 the which webpages should be rendered by which containers, and route the url respectively. 
 Components are used within containers etc, as they solve some form of functionality. 
 
-
-
+# Hosting
+With the  ``github-pages`` npm module installed, this static website should be served at [wgma.ca/bex/](wgma.ca/bex/). To deploy any changes simply run ``npm run deploy``, and it will publish the built files to the gh-pages branch which is then served by github.
