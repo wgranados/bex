@@ -15,6 +15,7 @@ class HamburgerMenu extends React.Component {
       return (
         <Menu>
             <Link to={`/`}>Home</Link>
+            <Link to={`/createlisting`}>Create Listing</Link>
             <Link to={`/settings`}>Settings</Link>
         </Menu>
       );

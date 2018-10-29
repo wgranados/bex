@@ -11,6 +11,7 @@ import Landing from './containers/Landing';
 import Results from './containers/Results';
 import Settings from './containers/Settings';
 import Listing from './containers/Listing';
+import CreateListing from './containers/CreateListing';
 
 class App extends Component {
   render() {
@@ -25,6 +26,8 @@ class App extends Component {
             <Route path="/settings" component={Settings} />
             <Route path="/results" component={Results} />
             <Route path="/listing" component={Listing} />
+            <Route path="/listing" component={Listing} />
+            <Route path="/createlisting" component={CreateListing} />
             {this.props.children}
           </div>
         </div>

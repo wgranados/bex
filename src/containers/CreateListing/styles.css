@@ -1,0 +1,6 @@
+.blockContainer{
+    text-align:center;
+}
+.block1, .block2 {
+    display: inline;
+}
