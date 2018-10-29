@@ -26,7 +26,6 @@ class App extends Component {
             <Route path="/settings" component={Settings} />
             <Route path="/results" component={Results} />
             <Route path="/listing" component={Listing} />
-            <Route path="/listing" component={Listing} />
             <Route path="/createlisting" component={CreateListing} />
             {this.props.children}
           </div>
