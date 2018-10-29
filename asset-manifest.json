@@ -1,0 +1,16 @@
+{
+  "main.css": "/bex/static/css/main.9ceb5784.chunk.css",
+  "main.js": "/bex/static/js/main.6d02eb08.chunk.js",
+  "main.js.map": "/bex/static/js/main.6d02eb08.chunk.js.map",
+  "static/css/1.0ff75f33.chunk.css": "/bex/static/css/1.0ff75f33.chunk.css",
+  "static/js/1.4a0ed455.chunk.js": "/bex/static/js/1.4a0ed455.chunk.js",
+  "static/js/1.4a0ed455.chunk.js.map": "/bex/static/js/1.4a0ed455.chunk.js.map",
+  "runtime~main.js": "/bex/static/js/runtime~main.27f24076.js",
+  "runtime~main.js.map": "/bex/static/js/runtime~main.27f24076.js.map",
+  "static/css/1.0ff75f33.chunk.css.map": "/bex/static/css/1.0ff75f33.chunk.css.map",
+  "static/media/tardos.jpg": "/bex/static/media/tardos.16d3c46f.jpg",
+  "static/css/main.9ceb5784.chunk.css.map": "/bex/static/css/main.9ceb5784.chunk.css.map",
+  "index.html": "/bex/index.html",
+  "precache-manifest.0805390f03cc336c5f09bd14744488aa.js": "/bex/precache-manifest.0805390f03cc336c5f09bd14744488aa.js",
+  "service-worker.js": "/bex/service-worker.js"
+}
