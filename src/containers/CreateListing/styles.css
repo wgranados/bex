@@ -1,6 +1,25 @@
 .blockContainer{
-    text-align:center;
+    /* text-align:center; */
 }
 .block1, .block2 {
     display: inline;
+}
+
+.container {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bx--label {
+    /* text-align: left; */
+}
+
+.bx--form-item {
+    padding-top: 10px;
+}
+
+.bx--text-area {
+    margin-bottom: 20px;
 }
