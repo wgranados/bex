@@ -1,16 +1,16 @@
 {
   "main.css": "/bex/static/css/main.194e7956.chunk.css",
-  "main.js": "/bex/static/js/main.82ea9d6f.chunk.js",
-  "main.js.map": "/bex/static/js/main.82ea9d6f.chunk.js.map",
+  "main.js": "/bex/static/js/main.333fc0e7.chunk.js",
+  "main.js.map": "/bex/static/js/main.333fc0e7.chunk.js.map",
   "static/css/1.37f1afe7.chunk.css": "/bex/static/css/1.37f1afe7.chunk.css",
   "static/js/1.dbab79fb.chunk.js": "/bex/static/js/1.dbab79fb.chunk.js",
   "static/js/1.dbab79fb.chunk.js.map": "/bex/static/js/1.dbab79fb.chunk.js.map",
   "runtime~main.js": "/bex/static/js/runtime~main.27f24076.js",
   "runtime~main.js.map": "/bex/static/js/runtime~main.27f24076.js.map",
-  "static/css/main.194e7956.chunk.css.map": "/bex/static/css/main.194e7956.chunk.css.map",
-  "static/media/tardos.jpg": "/bex/static/media/tardos.16d3c46f.jpg",
   "static/css/1.37f1afe7.chunk.css.map": "/bex/static/css/1.37f1afe7.chunk.css.map",
+  "static/media/tardos.jpg": "/bex/static/media/tardos.16d3c46f.jpg",
+  "static/css/main.194e7956.chunk.css.map": "/bex/static/css/main.194e7956.chunk.css.map",
   "index.html": "/bex/index.html",
-  "precache-manifest.cba236e48e14335d446707c152a1a2a6.js": "/bex/precache-manifest.cba236e48e14335d446707c152a1a2a6.js",
+  "precache-manifest.3eda01a79a929d9e817473fb334718e1.js": "/bex/precache-manifest.3eda01a79a929d9e817473fb334718e1.js",
   "service-worker.js": "/bex/service-worker.js"
 }
