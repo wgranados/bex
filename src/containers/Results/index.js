@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { DataTable } from 'carbon-components-react';
+import { DataTable, Button } from 'carbon-components-react';
 import { Link , Redirect } from 'react-router-dom';
 import _  from 'lodash';
+import PropTypes from 'prop-types'
 
 
 
@@ -13,40 +14,82 @@ const {
     TableBody,
     TableCell,
     TableHeader,
+    TableToolbarSearch,
+    TableToolbar,
+    TableToolbarContent
 } = DataTable;
 
 
 class Results extends Component  {
+    static contextTypes = {
+        router: PropTypes.object
+    }
+    redirectToTarget = () => {
+        this.context.router.history.push(`/createlisting`)
+    }
     render() {
         // Given that we have the following rows with the fields `foo`, `bar`, and `baz`
         const rows = [
             {
-              isbn_number: 1234567890,
-              id: "1234", 
-              title: "Algorithm Design",
-              author: "Kleinberg Tardos",
-              edition: "3rd",
-              price: 100,
-              location: "UofT Downtown",
+                isbn_number: 1234567890,
+                id: "1234", 
+                title: "Algorithm Design",
+                author: "Kleinberg Tardos",
+                edition: "3rd",
+                price: 100,
+                location: "UofT Downtown",
+                condition: "Excellent"
             },
             {
-              isbn_number: 1234567890,
-              id: "3421",
-              title: "Algorithm Design",
-              author: "Kleinberg Tardos",
-              edition: "2nd",
-              price: 102,
-              location: "UofT Downtown",
+                isbn_number: 1234567890,
+                id: "3421",
+                title: "Algorithm Design",
+                author: "Kleinberg Tardos",
+                edition: "2nd",
+                price: 102,
+                location: "UofT Downtown",
+                condition: "Excellent"
             },
             {
-              isbn_number: 1234567890,
-              id: "7891",
-              title: "Algorithm Design",
-              author: "Kleinberg Tardos",
-              edition: "3rd",
-              price: 99,
-              location: "Uwaterloo",
+                isbn_number: 1234567890,
+                id: "7891",
+                title: "Algorithm Design",
+                author: "Kleinberg Tardos",
+                edition: "3rd",
+                price: 99,
+                location: "Uwaterloo",
+                condition: "Excellent"
             },
+            {
+                isbn_number: 1234567890,
+                id: "78191",
+                title: "An Introduction to Psychological Science",
+                author: "Krause, Smith, Corts & Dolderman",
+                edition: "2nd",
+                price: 99,
+                location: "UofT Scarborough",
+                condition: "Great"
+            },
+            {
+                isbn_number: 9780521861243,
+                id: "315121",
+                title: "How To Prove It, A Structured Approach",
+                author: "Velleman, Daniel J.",
+                edition: "2nd",
+                price: 200,
+                location: "UofT Scarborough",
+                condition: "Usable"
+            },
+            {
+                isbn_number: 9780132122719,
+                id: "231311",
+                title: "Discrete Mathematics for Computer Scientists",
+                author: "Stein, Drysdale and Bogart",
+                edition: "1st",
+                price: 124,
+                location: "UofT Scarborough",
+                condition: "Good"
+            }
           ];
         const linkedRows = _.map(rows, (elem) => ({
             ...elem,
@@ -93,13 +136,25 @@ class Results extends Component  {
                 header: 'Location', 
                 key: 'location', 
             }, 
+            {
+                header: 'Condition',
+                key: 'condition'
+            }
         ];
         const table = 
         <DataTable
         rows={linkedRows}
         headers={headers}
-        render={({ rows, headers, getHeaderProps }) => (
+        render={({ rows, headers, getHeaderProps, onInputChange }) => (
             <TableContainer title={'Results for Tardos'}>
+            <TableToolbarSearch onChange={onInputChange} />
+            <TableToolbar>
+                <TableToolbarContent>
+                    <Button onClick={this.redirectToTarget} small kind="primary">
+                        Sell Book
+                    </Button>
+                </TableToolbarContent>
+            </TableToolbar>
             <Table>
                 <TableHead>
                 <TableRow>
