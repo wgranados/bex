@@ -11,7 +11,7 @@ class Landing extends Component  {
         return (
             <div>
                 <center>
-                    <p>Find a textbook</p>
+                    <h1>Find a textbook</h1>
                     <CustomLandingSearch 
                     />
                 </center>
