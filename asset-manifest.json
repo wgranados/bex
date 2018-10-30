@@ -1,7 +1,7 @@
 {
   "main.css": "/bex/static/css/main.194e7956.chunk.css",
-  "main.js": "/bex/static/js/main.333fc0e7.chunk.js",
-  "main.js.map": "/bex/static/js/main.333fc0e7.chunk.js.map",
+  "main.js": "/bex/static/js/main.2e31e425.chunk.js",
+  "main.js.map": "/bex/static/js/main.2e31e425.chunk.js.map",
   "static/css/1.37f1afe7.chunk.css": "/bex/static/css/1.37f1afe7.chunk.css",
   "static/js/1.dbab79fb.chunk.js": "/bex/static/js/1.dbab79fb.chunk.js",
   "static/js/1.dbab79fb.chunk.js.map": "/bex/static/js/1.dbab79fb.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/tardos.jpg": "/bex/static/media/tardos.16d3c46f.jpg",
   "static/css/main.194e7956.chunk.css.map": "/bex/static/css/main.194e7956.chunk.css.map",
   "index.html": "/bex/index.html",
-  "precache-manifest.3eda01a79a929d9e817473fb334718e1.js": "/bex/precache-manifest.3eda01a79a929d9e817473fb334718e1.js",
+  "precache-manifest.02b4378c8acf0138cdf75d8388f31112.js": "/bex/precache-manifest.02b4378c8acf0138cdf75d8388f31112.js",
   "service-worker.js": "/bex/service-worker.js"
 }
