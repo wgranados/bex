@@ -52,7 +52,7 @@ class Results extends Component  {
             ...elem,
             listing_id: <Link 
                 to={{
-                pathname:  '/listing',
+                pathname:  process.env.PUBLIC_URL + '/listing',
                 state: {
                     id: elem.id,
                     title: elem.title,
@@ -126,7 +126,7 @@ class Results extends Component  {
 
         return (
         <div>
-            <center><p>results</p></center>
+            <center><h1>Results</h1></center>
             <center>{table}</center>
         </div>
         );

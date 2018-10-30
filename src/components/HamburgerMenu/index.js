@@ -14,9 +14,9 @@ class HamburgerMenu extends React.Component {
   render () {
       return (
         <Menu>
-            <Link to={`/`}>Home</Link>
-            <Link to={`/createlisting`}>Create Listing</Link>
-            <Link to={`/settings`}>Settings</Link>
+            <Link to={process.env.PUBLIC_URL + `/`}>Home</Link>
+            <Link to={process.env.PUBLIC_URL + `/createlisting`}>Create Listing</Link>
+            <Link to={process.env.PUBLIC_URL + `/settings`}>Settings</Link>
         </Menu>
       );
   }

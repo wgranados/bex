@@ -22,7 +22,7 @@ class CustomLandingSearch extends Component  {
     render() {
         if(this.state.redirect) {
             return <Redirect to={{
-                pathname: "/results",
+                pathname: process.env.PUBLIC_URL + "/results",
                 search: "?utm="+this.state.value,
                 state: {search: this.state.value} }} />
         }
