@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/bex/static/js/runtime~main.27f24076.js"
   },
   {
-    "revision": "c8ce1c13a0de77d34db4",
-    "url": "/bex/static/js/main.c8ce1c13.chunk.js"
+    "revision": "a587c02d19c2f325e130",
+    "url": "/bex/static/js/main.a587c02d.chunk.js"
   },
   {
     "revision": "f43eae6748fcd1402823",
     "url": "/bex/static/js/1.f43eae67.chunk.js"
   },
   {
-    "revision": "c8ce1c13a0de77d34db4",
-    "url": "/bex/static/css/main.a24f9db3.chunk.css"
+    "revision": "a587c02d19c2f325e130",
+    "url": "/bex/static/css/main.089c395d.chunk.css"
   },
   {
     "revision": "f43eae6748fcd1402823",
     "url": "/bex/static/css/1.37f1afe7.chunk.css"
   },
   {
-    "revision": "2674809a6fe163fbc10b413a7a096fd8",
+    "revision": "6beb853f14a3210029cd19e88cdfccbc",
     "url": "/bex/index.html"
   }
 ];
