@@ -10,7 +10,10 @@ class Settings extends Component  {
     }
     // onChange handlers for various selects
     handleLanguageChange = (selectedLanguage) => { this.setState({selectedLanguage});}
-    handleFontChange = (selectedFont) => { this.setState({selectedFont});}
+    handleFontChange = (selectedFont, onFontChange) => { 
+        this.setState({selectedFont});
+        onFontChange(selectedFont);
+    }
     handleFontSizeChange = (selectedFontSize) => { this.setState({selectedFontSize});}
     handleBackgroundColourChange = (selectedBackgroundColor) => { this.setState({selectedBackgroundColor});}
 
@@ -21,23 +24,17 @@ class Settings extends Component  {
             selectedFontSize,
             selectedBackgroundColour,
         } = this.state;
+        const { onFontChange } = this.props;
         const languageOptions = [
             { value: "english", label: "English - EN"},
             { value: "spanish", label: "Spanish - ES"},
             { value: "french", label: "French - FE"},
         ];
         const fontOptions = [
-            { value: "Times New Roman", label: "Times New Roman"},
-            { value: "Arial", label: "Arial"},
-            { value: "Arial Black", label: "Arial Black"},
-            { value: "Comic Sans", label: "Comic Sans"},
-            { value: "Wingdings", label: "Wingdings"},
-        ];
-        const fontSizeOptions = [
-            { value: "12", label: "12pt"},
-            { value: "13", label: "13pt"},
-            { value: "14", label: "14pt"},
-            { value: "15", label: "15pt"},
+            { value: "tnr12pt", label: "Times New Roman - 12pt"},
+            { value: "tnr13pt", label: "Times New Roman - 13pt"},
+            { value: "tnr14pt", label: "Times New Roman - 14pt"},
+            { value: "tnr15pt", label: "Times New Roman - 15pt"},
         ];
         const backgroundColorOptions = [
             { value: "blue", label: "Blue"},
@@ -59,15 +56,8 @@ class Settings extends Component  {
                     <div style={{width: 200}}>
                         <Select
                             value={selectedFont}
-                            onChange={this.handleFontChange}
+                            onChange={(e) => this.handleFontChange(e, onFontChange)}
                             options={fontOptions} />
-                    </div>
-                    <p>Font Size</p>
-                    <div style={{width: 200}}>
-                        <Select
-                            value={selectedFontSize}
-                            onChange={this.handleFontSizeChange}
-                            options={fontSizeOptions} />
                     </div>
                     <p>Background Colour</p>
                     <div style={{width: 200}}>
