@@ -13,19 +13,22 @@ class Listing extends Component {
             price,
             location,
         } = this.props.location.state;
+        const { className } = this.props;
+        console.log(className);
+
         return (
             <div id="listing">
                 <center>
                     <h1>{title}</h1>
                     <img src={tardosImage} height="400px" width="400px"/>
-                    <p><b>Price:</b> {price}</p>
-                    <p><b>Title:</b> {title}</p>
-                    <p><b>Author:</b> {author}</p>
-                    <p><b>Edition:</b> {edition}</p>
-                    <p><b>ISBN Number:</b> {isbnNumber}</p>
-                    <p><b>Condition:</b> Good</p>
-                    <p><b>Location:</b> {location}</p>
-                    <p><b>Seller:</b> <a href="">wgma</a> </p>
+                    <p className={className} ><b>Price:</b> {price}</p>
+                    <p className={className} ><b>Title:</b> {title}</p>
+                    <p className={className} ><b>Author:</b> {author}</p>
+                    <p className={className} ><b>Edition:</b> {edition}</p>
+                    <p className={className} ><b>ISBN Number:</b> {isbnNumber}</p>
+                    <p className={className} ><b>Condition:</b> Good</p>
+                    <p className={className} ><b>Location:</b> {location}</p>
+                    <p className={className} ><b>Seller:</b> <a href="">wgma</a> </p>
                     <table>
                         <tbody>
                             <tr>

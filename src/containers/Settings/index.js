@@ -12,7 +12,10 @@ class Settings extends Component  {
     }
     // onChange handlers for various selects
     handleLanguageChange = (selectedLanguage) => { this.setState({selectedLanguage});}
-    handleFontChange = (selectedFont) => { this.setState({selectedFont});}
+    handleFontChange = (selectedFont, onFontChange) => { 
+        this.setState({selectedFont});
+        onFontChange(selectedFont);
+    }
     handleFontSizeChange = (selectedFontSize) => { this.setState({selectedFontSize});}
     handleBackgroundColourChange = (selectedBackgroundColor) => { this.setState({selectedBackgroundColor});}
 
@@ -49,30 +52,13 @@ class Settings extends Component  {
                             label="Font"
                             ariaLabel="Dropdown"
                             items={[
-                                { id: "Times New Roman", text: "Times New Roman"},
-                                { id: "Arial", text: "Arial"},
-                                { id: "Arial Black", text: "Arial Black"},
-                                { id: "Comic Sans", text: "Comic Sans"},
-                                { id: "Wingdings", text: "Wingdings"},
+                                { value: "tnr12pt", label: "Times New Roman - 12pt"},
+                                { value: "tnr13pt", label: "Times New Roman - 13pt"},
+                                { value: "tnr14pt", label: "Times New Roman - 14pt"},
+                                { value: "tnr15pt", label: "Times New Roman - 15pt"},
                             ]}
                             itemToString={item => (item ? item.text : '')}
-                            onChange={this.handleFontChange}
-                            />
-                        </div>
-
-                        <p>Font Size</p>
-                        <div style={{width: 300}}>
-                            <DropdownV2
-                            label="Font Size"
-                            ariaLabel="Dropdown"
-                            items={[
-                                { id: "12", text: "12pt"},
-                                { id: "13", text: "13pt"},
-                                { id: "14", text: "14pt"},
-                                { id: "15", text: "15pt"},
-                            ]}
-                            itemToString={item => (item ? item.text : '')}
-                            onChange={this.handleFontSizeChange}
+                            onChange={(e) => this.handleFontChange(e, onFontChange)}
                             />
                         </div>
 
@@ -86,6 +72,7 @@ class Settings extends Component  {
                                 { id: "white", text: "White"},
                             ]}
                             itemToString={item => (item ? item.text : '')}
+                            
                             onChange={this.handleBackgroundColourChange}
                             />
                         </div>
