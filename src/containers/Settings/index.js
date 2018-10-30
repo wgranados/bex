@@ -13,12 +13,17 @@ class Settings extends Component  {
     // onChange handlers for various selects
     handleLanguageChange = (selectedLanguage) => { this.setState({selectedLanguage});}
     handleFontChange = (selectedFont, onFontChange) => { 
+        
         this.setState({selectedFont});
         onFontChange(selectedFont);
     }
     handleFontSizeChange = (selectedFontSize) => { this.setState({selectedFontSize});}
     handleBackgroundColourChange = (selectedBackgroundColor) => { this.setState({selectedBackgroundColor});}
 
+    handleFontChange = (selectedFont, onFontChange) => { 
+        this.setState({selectedFont});
+        onFontChange(selectedFont);
+    }
     render() {
         const {
             selectedLanguage,
@@ -26,6 +31,7 @@ class Settings extends Component  {
             selectedFontSize,
             selectedBackgroundColour,
         } = this.state;
+        const { onFontChange } = this.props;
         return (
             <div>
                 <center>
@@ -52,10 +58,10 @@ class Settings extends Component  {
                             label="Font"
                             ariaLabel="Dropdown"
                             items={[
-                                { value: "tnr12pt", label: "Times New Roman - 12pt"},
-                                { value: "tnr13pt", label: "Times New Roman - 13pt"},
-                                { value: "tnr14pt", label: "Times New Roman - 14pt"},
-                                { value: "tnr15pt", label: "Times New Roman - 15pt"},
+                                { id: "tnr12pt", text: "Times New Roman - 12pt"},
+                                { id: "tnr13pt", text: "Times New Roman - 13pt"},
+                                { id: "tnr14pt", text: "Times New Roman - 14pt"},
+                                { id: "tnr15pt", text: "Times New Roman - 15pt"},
                             ]}
                             itemToString={item => (item ? item.text : '')}
                             onChange={(e) => this.handleFontChange(e, onFontChange)}
