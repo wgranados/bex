@@ -52,7 +52,7 @@ class Results extends Component  {
             ...elem,
             listing_id: <Link 
                 to={{
-                pathname:  '/listing',
+                pathname:  process.env.PUBLIC_URL + '/listing',
                 state: {
                     id: elem.id,
                     title: elem.title,
