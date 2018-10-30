@@ -22,11 +22,11 @@ class App extends Component {
             <HamburgerMenu />
           </div>
           <div className="content-wrapper padding" >
-            <Route exact path="/" component={Landing} />
-            <Route path="/settings" component={Settings} />
-            <Route path="/results" component={Results} />
-            <Route path="/listing" component={Listing} />
-            <Route path="/createlisting" component={CreateListing} />
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={Landing} />
+            <Route path={process.env.PUBLIC_URL + "/settings"} component={Settings} />
+            <Route path={process.env.PUBLIC_URL + "/results"} component={Results} />
+            <Route path={process.env.PUBLIC_URL + "/listing"} component={Listing} />
+            <Route path={process.env.PUBLIC_URL + "/createlisting"} component={CreateListing} />
             {this.props.children}
           </div>
         </div>
