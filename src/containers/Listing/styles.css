@@ -1,0 +1,23 @@
+  .wrapper {
+    width: 1005px;
+    margin: 0 auto;
+  }
+  
+  .leftcolumn,
+  .rightcolumn {
+    float: left;
+  }
+  
+  .leftcolumn {
+    width: 400px;
+    background-color: #111;
+    margin: 0em 1em 0em 0em;
+  }
+  
+  .rightcolumn {
+    width: 400px;
+  }
+
+  .infoAlign{
+    align: right;
+  }
