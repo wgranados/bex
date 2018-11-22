@@ -146,15 +146,9 @@ class Results extends Component  {
         rows={linkedRows}
         headers={headers}
         render={({ rows, headers, getHeaderProps, onInputChange }) => (
-            <TableContainer title={'Results for Tardos'}>
+            <TableContainer title={'Results for Algorithm Design'}>
             <TableToolbarSearch onChange={onInputChange} />
-            <TableToolbar>
-                <TableToolbarContent>
-                    <Button onClick={this.redirectToTarget} small kind="primary">
-                        Sell Book
-                    </Button>
-                </TableToolbarContent>
-            </TableToolbar>
+            <br/>
             <Table>
                 <TableHead>
                 <TableRow>
