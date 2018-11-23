@@ -45,37 +45,29 @@ class Settings extends Component  {
                 <center>
                     <h1>Settings</h1>
                     <div id="accessibility">
-                    <p>Language</p>
-                    <div style={{width: 200}}>
-                        <Select
-                            value={selectedLanguage}
-                            onChange={this.handleLanguageChange}
-                            options={languageOptions} />
-                    </div>
-                    <p>Font</p>
-                    <div style={{width: 200}}>
-                        <Select
-                            value={selectedFont}
-                            onChange={(e) => this.handleFontChange(e, onFontChange)}
-                            options={fontOptions} />
-                    </div>
-                    <p>Background Colour</p>
-                    <div style={{width: 200}}>
-                        <Select
-                            value={selectedBackgroundColour}
-                            onChange={this.handleBackgroundColourChange}
-                            options={backgroundColorOptions} />
-                    </div>
-
-
-
-                    </div>
-                    <div id="login">
-                        <h3>Login</h3>
-                        <p>Email: <input></input></p>
-                        <p>Password: <input></input> </p>
-                        <button>reset password</button>
-                        <button>link facebook</button>
+                        <p>Language</p>
+                        <div style={{width: 200}}>
+                            <Select
+                                value={selectedLanguage}
+                                onChange={this.handleLanguageChange}
+                                options={languageOptions} />
+                        </div>
+                        <p>Font</p>
+                        <div style={{width: 200}}>
+                            <Select
+                                value={selectedFont}
+                                onChange={(e) => this.handleFontChange(e, onFontChange)}
+                                options={fontOptions} />
+                        </div>
+                        <p>Background Colour</p>
+                        <div style={{width: 200}}>
+                            <Select
+                                value={selectedBackgroundColour}
+                                onChange={this.handleBackgroundColourChange}
+                                options={backgroundColorOptions} />
+                        </div>
+                        <br/>
+                        <button>Submit Changes</button>
                     </div>
                 </center>
 

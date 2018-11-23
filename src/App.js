@@ -11,6 +11,7 @@ import Landing from './containers/Landing';
 import Results from './containers/Results';
 import Settings from './containers/Settings';
 import Listing from './containers/Listing';
+import Login from './containers/Login';
 import CreateListing from './containers/CreateListing';
 
 
@@ -49,6 +50,7 @@ class App extends Component {
               render={(props) => <Listing {...props} className={listingClassName} />} 
               />
             <Route path={process.env.PUBLIC_URL + "/createlisting"} component={CreateListing} />
+            <Route path={process.env.PUBLIC_URL + "/login"} component={Login} />
             {this.props.children}
           </div>
         </div>

@@ -40,7 +40,8 @@ class HamburgerMenu extends React.Component {
             <NavIcon>
                 <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
             </NavIcon>
-            <NavText>
+            <NavText
+            >
                 Home
             </NavText>
         </NavItem>
@@ -48,7 +49,8 @@ class HamburgerMenu extends React.Component {
             <NavIcon>
                 <i className="fa fa-fw fa-plus" style={{ fontSize: '1.75em' }} />
             </NavIcon>
-            <NavText>
+            <NavText
+            >
               Create Listing 
             </NavText>
         </NavItem>
@@ -56,8 +58,18 @@ class HamburgerMenu extends React.Component {
             <NavIcon>
                 <i className="fa fa-fw fa-cogs" style={{ fontSize: '1.75em' }} />
             </NavIcon>
-            <NavText>
+            <NavText
+            >
               Settings
+            </NavText>
+        </NavItem>
+        <NavItem eventKey="login">
+            <NavIcon>
+                <i className="fa fa-fw fa-sign-in" style={{ fontSize: '1.75em' }} />
+            </NavIcon>
+            <NavText
+            >
+             Sign In 
             </NavText>
         </NavItem>
     </SideNav.Nav>
