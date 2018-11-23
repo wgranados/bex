@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/bex/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "516e9615853523e7b48d",
+    "revision": "9d00a3e6ac7377634b99",
     "url": "/bex/static/css/main.59461caf.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/bex/static/media/tardos.16d3c46f.jpg"
   },
   {
-    "revision": "ba6cacb3bbbc027b4507",
-    "url": "/bex/static/js/1.ba6cacb3.chunk.js"
+    "revision": "96c1e2e246100e4640b2",
+    "url": "/bex/static/js/1.96c1e2e2.chunk.js"
   },
   {
     "revision": "27f24076076970e0fa56",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/bex/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "516e9615853523e7b48d",
-    "url": "/bex/static/js/main.516e9615.chunk.js"
+    "revision": "9d00a3e6ac7377634b99",
+    "url": "/bex/static/js/main.9d00a3e6.chunk.js"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -40,11 +40,11 @@ self.__precacheManifest = [
     "url": "/bex/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "ba6cacb3bbbc027b4507",
+    "revision": "96c1e2e246100e4640b2",
     "url": "/bex/static/css/1.1924f931.chunk.css"
   },
   {
-    "revision": "df8f84cc51de042b65459a5fd3778434",
+    "revision": "d8fa4584566939c44cb67a547ecb8522",
     "url": "/bex/index.html"
   }
 ];
