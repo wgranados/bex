@@ -1,17 +1,17 @@
 {
   "main.css": "/bex/static/css/main.59461caf.chunk.css",
-  "main.js": "/bex/static/js/main.9d00a3e6.chunk.js",
-  "main.js.map": "/bex/static/js/main.9d00a3e6.chunk.js.map",
+  "main.js": "/bex/static/js/main.1c3cabb7.chunk.js",
+  "main.js.map": "/bex/static/js/main.1c3cabb7.chunk.js.map",
   "static/css/1.1924f931.chunk.css": "/bex/static/css/1.1924f931.chunk.css",
-  "static/js/1.96c1e2e2.chunk.js": "/bex/static/js/1.96c1e2e2.chunk.js",
-  "static/js/1.96c1e2e2.chunk.js.map": "/bex/static/js/1.96c1e2e2.chunk.js.map",
+  "static/js/1.4558bece.chunk.js": "/bex/static/js/1.4558bece.chunk.js",
+  "static/js/1.4558bece.chunk.js.map": "/bex/static/js/1.4558bece.chunk.js.map",
   "runtime~main.js": "/bex/static/js/runtime~main.27f24076.js",
   "runtime~main.js.map": "/bex/static/js/runtime~main.27f24076.js.map",
   "static/media/font-awesome.min.css": "/bex/static/media/fontawesome-webfont.fee66e71.woff",
   "static/media/tardos.jpg": "/bex/static/media/tardos.16d3c46f.jpg",
-  "static/css/1.1924f931.chunk.css.map": "/bex/static/css/1.1924f931.chunk.css.map",
   "static/css/main.59461caf.chunk.css.map": "/bex/static/css/main.59461caf.chunk.css.map",
+  "static/css/1.1924f931.chunk.css.map": "/bex/static/css/1.1924f931.chunk.css.map",
   "index.html": "/bex/index.html",
-  "precache-manifest.a41bb2019ae52347be95eacc0f1104f7.js": "/bex/precache-manifest.a41bb2019ae52347be95eacc0f1104f7.js",
+  "precache-manifest.27714a89eba96073b2ff8b6edfa3778b.js": "/bex/precache-manifest.27714a89eba96073b2ff8b6edfa3778b.js",
   "service-worker.js": "/bex/service-worker.js"
 }
