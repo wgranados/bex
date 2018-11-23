@@ -8,6 +8,7 @@
     "carbon-components": "^9.35.1",
     "carbon-components-react": "^6.42.0",
     "carbon-icons": "^7.0.7",
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.9.4",
     "react": "^16.6.3",
     "react-burger-menu": "^2.5.4",

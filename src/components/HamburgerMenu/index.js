@@ -7,6 +7,7 @@ import './styles.css'
 
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 
@@ -31,6 +32,7 @@ class HamburgerMenu extends React.Component {
       return (
         <SideNav
     onSelect={this.onSelect}
+
 >
     <SideNav.Toggle />
     <SideNav.Nav defaultSelected="home">
@@ -44,7 +46,7 @@ class HamburgerMenu extends React.Component {
         </NavItem>
         <NavItem eventKey="createlisting">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+                <i className="fa fa-fw fa-plus" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
               Create Listing 
@@ -52,7 +54,7 @@ class HamburgerMenu extends React.Component {
         </NavItem>
         <NavItem eventKey="settings">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+                <i className="fa fa-fw fa-cogs" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
               Settings
