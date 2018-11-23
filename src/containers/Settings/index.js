@@ -6,23 +6,32 @@ class Settings extends Component  {
         selectedLanguage: null,
         selectedFont: null,
         selectedFontSize: null,
-        selectedBackgroundColour: null
+        selectedBackgroundColour: null,
+        selectedTextColour: null
     }
     // onChange handlers for various selects
-    handleLanguageChange = (selectedLanguage) => { this.setState({selectedLanguage});}
+    handleLanguageChange = (selectedLanguage) => { 
+        this.setState({...this.state, selectedLanguage: selectedLanguage});
+    }
     handleFontChange = (selectedFont, onFontChange) => { 
-        this.setState({selectedFont});
+        this.setState({...this.state, selectedFont: selectedFont});
         onFontChange(selectedFont);
     }
-    handleFontSizeChange = (selectedFontSize) => { this.setState({selectedFontSize});}
-    handleBackgroundColourChange = (selectedBackgroundColor) => { this.setState({selectedBackgroundColor});}
-
+    handleFontSizeChange = (selectedFontSize) => { 
+        this.setState({selectedFontSize});
+    }
+    handleBackgroundColourChange = (selectedBackgroundColour) => { 
+        this.setState({...this.state, selectedBackgroundColour});
+    }
+    handleTextColourChange = (selectedTextColour) => { 
+        this.setState({...this.state, selectedTextColour});
+    }
     render() {
         const {
             selectedLanguage,
             selectedFont,
-            selectedFontSize,
             selectedBackgroundColour,
+            selectedTextColour,
         } = this.state;
         const { onFontChange } = this.props;
         const languageOptions = [
@@ -39,6 +48,12 @@ class Settings extends Component  {
         const backgroundColorOptions = [
             { value: "blue", label: "Blue"},
             { value: "white", label: "White"},
+            { value: "pink", label: "Pink"},
+            { value: "black", label: "Black"},
+        ];
+        const textColorOptions = [
+            { value: "black", label: "Black"},
+            { value: "yellow", label: "Yellow"},
         ];
         return (
             <div>
@@ -65,6 +80,13 @@ class Settings extends Component  {
                                 value={selectedBackgroundColour}
                                 onChange={this.handleBackgroundColourChange}
                                 options={backgroundColorOptions} />
+                        </div>
+                        <p>Text Colour</p>
+                        <div style={{width: 200}}>
+                            <Select
+                                value={selectedTextColour}
+                                onChange={this.handleTextColourChange}
+                                options={textColorOptions} />
                         </div>
                         <br/>
                         <button>Submit Changes</button>
